@@ -1,0 +1,24 @@
+title: MiFix LLC
+description: Practical notes on building better digital systems.
+url: "https://mifix.github.io"
+baseurl: ""
+author:
+  name: MiFix LLC
+  email: hello@mifix.llc
+
+markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title/
+timezone: America/New_York
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md

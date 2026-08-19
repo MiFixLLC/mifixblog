@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="post-page">
+  <div class="post-kicker"><a href="{{ '/' | relative_url }}#latest">← All notes</a><span>{{ page.date | date: "%b %-d, %Y" }}</span></div>
+  <header class="post-header">
+    <p class="eyebrow">{{ page.category | default: "Field notes" }}</p>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="post-lede">{{ page.description }}</p>{% endif %}
+  </header>
+  <div class="post-content">{{ content }}</div>
+</article>
